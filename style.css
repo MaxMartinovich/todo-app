@@ -26,3 +26,71 @@ h1 {
   text-align: center;
   color: rgb(240, 77, 13);
 }
+
+.container {
+  width: 700px;
+  max-width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+#todo-input {
+  width: 100%;
+  background: none;
+  border-radius: 600px;
+  color: rgb(240, 77, 13);
+  border: 2px solid var(rgb(35, 181, 229));
+  box-sizing: border-box;
+  font: inherit;
+  caret-color: rgb(88, 36, 15);
+  padding: 12px 20px;
+}
+
+#todo-input:focus {
+  outline: none;
+}
+
+form {
+  position: relative;
+}
+#add-button {
+  position: absolute;
+  top: 0;
+  right: 500;
+  margin-left: 7px;
+  height: 100%;
+  padding: 0 20px;
+  border: none;
+  border-radius: 400px;
+  font-weight: bold;
+  color: #121212;
+  cursor: pointer;
+  background-color: rgb(185, 112, 84);
+}
+
+.tarefas {
+  margin-bottom: 10px;
+  padding: 0 20px;
+  background-color: rgb(141, 137, 137);
+  border-radius: 40px;
+  display: flex;
+  align-items: center;
+}
+
+.tarefas .tarefas-texto {
+  padding: 10px;
+  padding-right: 0;
+  flex-grow: 1;
+}
+
+.delete-button {
+  padding: 3px;
+  background: none;
+  border: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  font-size: 25px;
+}
