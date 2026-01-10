@@ -94,3 +94,36 @@ form {
   cursor: pointer;
   font-size: 25px;
 }
+
+.delete-button:hover {
+  filter: invert(30%);
+}
+
+.customizar-checkbox {
+  min-height: 20px;
+  min-width: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-shrink: 0;
+  border: 2px solid rgb(9, 205, 9);
+  border-radius: 50px;
+  font-size: 0;
+}
+
+input[type="checkbox"]:checked ~ .customizar-checkbox {
+  background-color: rgb(106, 243, 14);
+}
+
+input[type="checkbox"]:checked ~ .customizar-checkbox {
+  font-size: 15px;
+}
+
+input[type="checkbox"]:checked ~ .tarefas-texto {
+  text-decoration: line-through;
+  color: grey;
+}
+
+input[type="checkbox"] {
+  display: none;
+}
