@@ -38,9 +38,18 @@ function criarTodoItem(todo, todoIndex) {
           <label for="${todoId}" class="tarefas-texto">${todo}</label>
           <button class="delete-button">🗑️</button>
         </li>`;
+  const deletarBtn = todoLi.querySelector(".delete-button");
+  deletarBtn.addEventListener("click", () => {
+    deletarTodoItem(todoIndex);
+  });
   return todoLi;
 }
 
+function deletarTodoItem(todoIndex) {
+  arrTodos = arrTodos.filter((_, i) => i !== todoIndex);
+  criarTodoItem();
+  refreshTodoList();
+}
 function localStorageTodo() {
   const todosJson = JSON.stringify(arrTodos);
   localStorage.setItem("todos", todosJson);
