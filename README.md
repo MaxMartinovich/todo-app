@@ -1,4 +1,5 @@
 # To do List
+<img width="1900" height="906" alt="to-do-app" src="https://github.com/user-attachments/assets/dd758393-75bd-46d5-9826-6b5c4aba9ab4" />
 
 ## Descrição
 Aplicação simples para organizar as tarefas do dia a dia
